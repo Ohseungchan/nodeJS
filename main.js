@@ -39,10 +39,10 @@ var app = http.createServer(function (request, response) {
                 fs.readFile(`./data/${queryData.id}`, 'utf8',
                     function (err, description) {                      
                         var list = template.list(filelist);
-                        var title = '산소가 생성되어 숨쉬는 것은 참으로 경이롭다';
+                        var title = '관리자페이지';
                         var sanitizeTitle = sanitizeHtml(title);
 
-                        description = '호흡은 산소를 필요로 하며, 산소는 나무를 필요로 하며, 나무는 음양과 뿌리를 내릴 곳을 필요로 한다.';
+                        description = '여기는 관리자 페이지입니다. 관리자가 파일을 추가, 수정, 삭제 할 수 있습니다.';
                         var sanitizeDesc = sanitizeHtml(description);
                         
                         var html = template.HTML(sanitizeTitle, list, `<h2>${sanitizeTitle}</h2>${sanitizeDesc}`,  
@@ -260,10 +260,10 @@ var app = http.createServer(function (request, response) {
                 fs.readFile(`./data/${queryData.id}`, 'utf8',
                     function (err, description) {                      
                         var list = templateSub.list(filelist);
-                        var title = '산소가 생성되어 숨쉬는 것은 참으로 경이롭다';
+                        var title = '사용자 페이지';
                         var sanitizeTitle = sanitizeHtml(title);
 
-                        description = '호흡은 산소를 필요로 하며, 산소는 나무를 필요로 하며, 나무는 음양과 뿌리를 내릴 곳을 필요로 한다.';
+                        description = '여기는 사용자가 관리자가 게시한 글을 읽는 곳입니다.';
                         var sanitizeDesc = sanitizeHtml(description);
                         
                         var html = templateSub.HTML(sanitizeTitle, list, `<h2>${sanitizeTitle}</h2>${sanitizeDesc}`,   
