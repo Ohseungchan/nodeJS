@@ -18,6 +18,6 @@
   "homepage": "https://github.com/Ohseungchan/nodeJS#readme",
   "dependencies": {
     "sanitize-html": "^1.27.4"
-  }
+  },
   "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
