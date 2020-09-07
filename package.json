@@ -1,0 +1,22 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "I keep going to record coding.  /2020.09.04.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ohseungchan/nodeJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ohseungchan/nodeJS/issues"
+  },
+  "homepage": "https://github.com/Ohseungchan/nodeJS#readme",
+  "dependencies": {
+    "sanitize-html": "^1.27.4"
+  }
+}
